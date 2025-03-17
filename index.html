@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Walk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg nav">
+        <div class="container">
+            <h1 class="shopname">Velvet Walk</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Slider -->
+    <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20230525/pngtree-the-red-high-heel-shoe-placed-on-a-surface-image_2626173.jpg" class="d-block w-100 img-fluid" alt="Shoe 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20250121/pngtree-metallic-texture-pink-high-heels-on-background-image_16939651.jpg" class="d-block w-100 img-fluid" alt="Shoe 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20230722/pngtree-d-render-of-high-heel-shoes-in-a-light-red-hue-image_3772580.jpg" class="d-block w-100 img-fluid" alt="Shoe 3">
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
+        <!-- Hero Text Overlay -->
+        <div class="hero-overlay">
+            <h1>Comfort in Every Step, Confidence in Every Stride.</h1>
+            <p>Find the perfect pair for every occasion</p>
+            <a href="#" class="btn btn-danger">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4 feature">Featured Shoes</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shoe-card">
+                    <img src="./redelegance.jpg" alt="Shoe 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Red Elegance Heels</h5>
+                      
+                        <a href="#" class="btn btn-dark">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shoe-card">
+                    <img src="https://img.freepik.com/premium-photo/pair-blue-shoes-with-glitter-them_1277670-13697.jpg" class="card-img-top" alt="Shoe 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Blue Glam Stilettos</h5>
+                        
+                        <a href="#" class="btn btn-dark">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shoe-card">
+                    <img src="https://images.pexels.com/photos/19279700/pexels-photo-19279700/free-photo-of-pair-of-white-high-heels.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Shoe 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">White Chic Heels</h5>
+                      
+                        <a href="#" class="btn btn-dark">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center">Have questions? We'd love to hear from you!</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
